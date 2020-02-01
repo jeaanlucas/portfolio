@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
@@ -40,7 +38,7 @@ class Main extends React.Component {
             <br />
             Dúvida?
             <br />
-            <a href="#trabalhos">Da uma olhadinha então</a>.
+            <a href="trabalhos">Da uma olhadinha então</a>.
           </p>
           <p>
             Quais tecnologias você precisa? Posso te ajudar com o PHP vanilla,
@@ -54,7 +52,7 @@ class Main extends React.Component {
             estou tentando escrever um livro, mas olha, a tarefa é bem difícil!
           </p>
           <p>
-            Fique a vontade para me <a href="#contate-me">contatar</a>. Prometo
+            Fique a vontade para me <a href="contate-me">contatar</a>. Prometo
             que vou responder rápido!
           </p>
           {close}
