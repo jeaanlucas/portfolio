@@ -22,47 +22,52 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="sobre"
+          className={`${this.props.article === 'sobre' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
+          <h2 className="major">Sobre</h2>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Sou desenvolvedor e amo o que faço, amo desafios e coisas novas.
+            Estou nessa área há algum tempo e pelo menos 5 anos são dedicados à
+            web (implementando sites e sistemas).
+            <br />
+            Após descobrir a área mobile, resolvi mudar meu foco. Utilizando{' '}
+            <a href="https://flutter.dev/">Flutter</a>, cosingo montar
+            aplicativos muito legais e funcionalidades épicas.
+            <br />
+            Dúvida?
+            <br />
+            <a href="#trabalhos">Da uma olhadinha então</a>.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Quais tecnologias você precisa? Posso te ajudar com o PHP vanilla,
+            Laravel, Java vanilla, Spring, JS vanilla, TypeScript, Jquery,
+            VueJS, AngularJS, Angular 7, Vagrant, Docker, Tortoise, Git, SOAP,
+            Rest e Flutter.
+          </p>
+          <p>
+            Sou entusiasta de novas tecnologias (hardware e software), jogos
+            (RPG), livros (fantasias, guerras e mitologias) e músicas. Também
+            estou tentando escrever um livro, mas olha, a tarefa é bem difícil!
+          </p>
+          <p>
+            Fique a vontade para me <a href="#contate-me">contatar</a>. Prometo
+            que vou responder rápido!
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="trabalhos"
+          className={`${this.props.article === 'trabalhos' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Trabalhos</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -85,75 +90,28 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="contate-me"
+          className={`${this.props.article === 'contate-me' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
+          <h2 className="major">Contate-me</h2>
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                href="mailto:jeanl.camillo@gmail.com"
+                className="icon fa-envelope"
               >
-                <span className="label">Twitter</span>
+                <span className="label">E-mail</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
+              <a
+                href="https://wa.me/5544998126928"
+                className="icon fa-whatsapp"
+              >
+                <span className="label">Whatsapp</span>
               </a>
             </li>
             <li>
@@ -162,6 +120,22 @@ class Main extends React.Component {
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jeanluucas/"
+                className="icon fa-linkedin"
+              >
+                <span className="label">Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/jeanluucas"
+                className="icon fa-facebook"
+              >
+                <span className="label">Facebook</span>
               </a>
             </li>
           </ul>

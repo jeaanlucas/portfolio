@@ -10,50 +10,42 @@ const Header = props => (
       <div className="inner">
         <h1>Portfólio</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Olá, seja bem vindo :D
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Está precisando de um app fod# ou um site monstro?
+          <br />
+          Você veio ao lugar certo.
         </p>
       </div>
     </div>
+
     <nav>
       <ul>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('sobre')
             }}
           >
-            Intro
+            Sobre
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('trabalhos')
             }}
           >
-            Work
+            Trabalhos
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('contate-me')
             }}
           >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
+            Contate-me
           </button>
         </li>
       </ul>
