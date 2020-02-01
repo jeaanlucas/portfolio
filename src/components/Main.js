@@ -26,7 +26,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Sobre</h2>
+          <h2 className="major">Sobre mim</h2>
           <p>
             Sou desenvolvedor e amo o que faço, amo desafios e coisas novas.
             Estou nessa área há algum tempo e pelo menos 5 anos são dedicados à
@@ -38,7 +38,7 @@ class Main extends React.Component {
             <br />
             Dúvida?
             <br />
-            <a href="trabalhos">Da uma olhadinha então</a>.
+            <a href="#trabalhos">Da uma olhadinha então</a>.
           </p>
           <p>
             Quais tecnologias você precisa? Posso te ajudar com o PHP vanilla,
@@ -52,7 +52,7 @@ class Main extends React.Component {
             estou tentando escrever um livro, mas olha, a tarefa é bem difícil!
           </p>
           <p>
-            Fique a vontade para me <a href="contate-me">contatar</a>. Prometo
+            Fique a vontade para me <a href="#contate-me">contatar</a>. Prometo
             que vou responder rápido!
           </p>
           {close}
